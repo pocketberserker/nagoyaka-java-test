@@ -18,7 +18,7 @@ public class FizzBuzz {
             (m3 && m5) ? "fizzbuzz" :
             (m5) ? "buzz" :
             (m3) ? "fizz" :
-            null;
+            String.valueOf(number);
     }
 
     static Optional<IntStream> inverse(String[] input, int start) {

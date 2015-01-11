@@ -28,6 +28,7 @@ object NagoyakaJavaTestBuild extends Build {
       Nil
     ),
     libraryDependencies ++= Seq(
+      scalaz % "test",
       scalacheck % "test"
     ),
     organization := "com.github.pocketberserker",
@@ -44,5 +45,6 @@ object NagoyakaJavaTestBuild extends Build {
   object Dependencies {
 
     val scalacheck = "org.scalacheck" %% "scalacheck" % "1.12.1"
+    val scalaz = "org.scalaz" %% "scalaz-core" % "7.1.0"
   }
 }

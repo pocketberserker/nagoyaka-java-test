@@ -1,5 +1,6 @@
 package nagoyaka
 
+import scalaz.syntax.std.string._
 import org.scalacheck.Properties
 import org.scalacheck.Gen
 import org.scalacheck.Prop.forAll
@@ -21,7 +22,7 @@ object FizzBuzzSpec extends Properties("FizzBuzz") {
       FizzBuzz.inverseFizzBuzz(input)
         .get()
         .map(FizzBuzz.toFizzBuzz(_))
-        .filter(_ != null)
+        .filter(!_.parseInt.isSuccess)
     actual sameElements input
   }
 }
