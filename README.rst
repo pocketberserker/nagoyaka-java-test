@@ -17,6 +17,7 @@ scalacheck は Haskell の QuickCheck に影響を受けている。
 --------
 
 src/test/scala/nagoyaka/QuickStart.scala
+
 src/test/scala/nagoyaka/FizzBuzzSpec.scala
 
 よくあるテスト例
